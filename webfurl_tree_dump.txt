@@ -1,0 +1,9 @@
+=== NAVIGATE TREE DUMP ===
+URL: https://www.airbnb.com/s/Mountain-View--CA--United-States/homes?checkin=2025-05-10&checkout=2025-05-17&adults=1&place_id=ChIJVVVVVYV3j4ARpNU9mh2I5yE
+Root nodes: 2
+Compressed tokens: 16
+Full tokens: 20
+Stats: chunks=39 cached=2 llm=0
+Duration: 1253ms
+[Text label displaying "Google apps"] id=google-apps actions=0 children=0 tokens=8
+[Text label displaying "Google apps"] id=google-apps actions=0 children=0 tokens=8

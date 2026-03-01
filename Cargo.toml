@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "crates/webfurl-core",
+    "crates/webfurl-server",
+    "crates/webfurl-agent",
+]
+resolver = "2"
+
+[workspace.dependencies]
+minillmlib = "0.3.0"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "fs", "sync", "io-util", "io-std"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+thiserror = "2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

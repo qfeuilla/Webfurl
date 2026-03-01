@@ -1,0 +1,31 @@
+[package]
+name = "webfurl-agent"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "webfurl-agent"
+path = "src/main.rs"
+
+[[bin]]
+name = "diagnose"
+path = "src/bin/diagnose.rs"
+
+[dependencies]
+webfurl-core = { path = "../webfurl-core" }
+minillmlib = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Browser via Chrome DevTools Protocol
+chromiumoxide = "0.9"
+futures = "0.3"
+
+# HTML parsing (for diagnostic tools)
+dom_query = "0.7"
+
+# Utilities
+dotenvy = "0.15"

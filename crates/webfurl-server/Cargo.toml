@@ -1,0 +1,21 @@
+[package]
+name = "webfurl-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+webfurl-core = { path = "../webfurl-core" }
+minillmlib = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+# Web server
+axum = { version = "0.8", features = ["json", "macros"] }
+tower = "0.5"
+tower-http = { version = "0.6", features = ["cors"] }
+
+# Utilities
+dotenvy = "0.15"

@@ -1,0 +1,7 @@
+/target
+.env
+*.swp
+*.swo
+.DS_Storediagnose/
+.webfurl.pids
+diagnose
